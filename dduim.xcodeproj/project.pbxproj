@@ -14,6 +14,10 @@
 		5D5A2071270FA64500D4448F /* dduimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A2070270FA64500D4448F /* dduimTests.swift */; };
 		5D5A207B270FA64600D4448F /* dduimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A207A270FA64600D4448F /* dduimUITests.swift */; };
 		5D5A207D270FA64600D4448F /* dduimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A207C270FA64600D4448F /* dduimUITestsLaunchTests.swift */; };
+		5D5A208B270FA6F200D4448F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A2089270FA6F200D4448F /* MapView.swift */; };
+		5D5A208C270FA6F200D4448F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A208A270FA6F200D4448F /* LocationManager.swift */; };
+		5D5A20922712856C00D4448F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A20912712856C00D4448F /* UserDefaults.swift */; };
+		5D5A20942713C55200D4448F /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A20932713C55100D4448F /* CLLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		5D5A2076270FA64600D4448F /* dduimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dduimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5A207A270FA64600D4448F /* dduimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dduimUITests.swift; sourceTree = "<group>"; };
 		5D5A207C270FA64600D4448F /* dduimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dduimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5D5A2089270FA6F200D4448F /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5D5A208A270FA6F200D4448F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5D5A208D27108B3000D4448F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5D5A20912712856C00D4448F /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		5D5A20932713C55100D4448F /* CLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,10 @@
 		5D5A205E270FA63E00D4448F /* dduim */ = {
 			isa = PBXGroup;
 			children = (
+				5D5A20902712854700D4448F /* extension */,
+				5D5A208D27108B3000D4448F /* Info.plist */,
+				5D5A208A270FA6F200D4448F /* LocationManager.swift */,
+				5D5A2089270FA6F200D4448F /* MapView.swift */,
 				5D5A205F270FA63E00D4448F /* dduimApp.swift */,
 				5D5A2061270FA63E00D4448F /* ContentView.swift */,
 				5D5A2063270FA64500D4448F /* Assets.xcassets */,
@@ -125,6 +138,15 @@
 				5D5A207C270FA64600D4448F /* dduimUITestsLaunchTests.swift */,
 			);
 			path = dduimUITests;
+			sourceTree = "<group>";
+		};
+		5D5A20902712854700D4448F /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				5D5A20912712856C00D4448F /* UserDefaults.swift */,
+				5D5A20932713C55100D4448F /* CLLocation.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D5A208C270FA6F200D4448F /* LocationManager.swift in Sources */,
+				5D5A20922712856C00D4448F /* UserDefaults.swift in Sources */,
 				5D5A2062270FA63E00D4448F /* ContentView.swift in Sources */,
+				5D5A208B270FA6F200D4448F /* MapView.swift in Sources */,
 				5D5A2060270FA63E00D4448F /* dduimApp.swift in Sources */,
+				5D5A20942713C55200D4448F /* CLLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,11 +443,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"dduim/Preview Content\"";
 				DEVELOPMENT_TEAM = 8N7S6W33C4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dduim/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = hahahah3;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = hahaha2;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,11 +477,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"dduim/Preview Content\"";
 				DEVELOPMENT_TEAM = 8N7S6W33C4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dduim/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = hahahah3;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = hahaha2;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
